@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="newEra image.jpg" />
+    <title> New Era Tech: Login to your Account</title>
+     <link rel="stylesheet" href="bankApp.css">
+
+</head>
+<body>
+    <h1 class="newEra">NEW ERA TECH BANK~APP</h1>
+    <img src="newEra image.jpg" width="80" height="80" class="logoNewEra">  <span class="span1"><a href="#">Services</a> |<a href="#"> About Us</a> | <a href="#"> Customer Care </a></span>
+    <!-- login page2 -->
+    <form action="" class="user_form">
+        <h4 class="labisi">Welcome to your Bank~App. We are here to serve you better!!!</h4>
+        <div>
+        <input type="text" class="user user_input" placeholder="User"> 
+        <input type="password" class="pin user_input" placeholder="Pin">
+        <button class="user_btn">&rarr; </button> 
+    </div>
+    </form>
+    
+ 
+
+<!-- BANK APP -->
+<main class="bank_app">
+    <h3 class="name_account">Dear Jerry,</h3>
+<!-- balance sheet -->
+<div class="balance_sheet">
+    <div class="">
+    <p class="balance_label">Current Balance </p>
+    <p class="balance_date" >As of <span class="date">31/01/2023</span></p> 
+    </div>
+    <h1 class="total_balance">$000.00 </h1>
+    
+</div>
+
+<!-- DEPOSIT -->
+<section class="sections">
+    <article>
+        <div class="movements">
+    <div class="transactions">
+        <div class="alert">
+        <div>
+        <span class="alert_label trans_label--CREDIT"> 3 CREDIT</span> 
+        <span class="alert_date">3 days ago</span>
+        </div>
+        <div class="alert_value">$000.00</div>
+    </div>
+<!-- DEBIT -->
+    <div class="alert">
+        <div>
+            <span class="alert_label trans_label--DEBIT"> 1 DEBIT</span>
+            <span class="alert_date">3 days ago</span>
+        </div>
+        <div class="alert_value"> $-000.00</div>
+    </div>
+</div>
+</div>
+<!-- SUMMARY_DETAILS -->
+<h2 class="summary1">Summary</h2>
+<div class="summary">
+    <div>
+        <span class="summary_label">IN</span>
+        <span class="summary_value_in">$000.00</span>
+    </div>
+    <div>
+        <span class="summary_label">OUT</span>
+        <span class="summary_value_out">$000.00</span>
+    </div>
+    <div>
+        <span class="summary_label">INTEREST</span>
+        <span class="summary_value_interest">$000.00</span>
+    </div>
+    <div>
+        <button class="summary_sort"><!-- &downarrow; -->⬇️ SORT</button>
+    </div>  
+
+</div>
+</article>
+
+
+<!-- OPERATION: TRANSFER -->
+<article>
+<div class="operation transfer">
+<h3>Transfer Money💸</h3>
+<form action="" class="form form_transfer">
+    <input type="text" class="form_input form-input_to" placeholder="Acct. Name"> 
+    <input type="number" class="form_input form-input_number" placeholder="$000.00">
+    <button class="transfer_btn operation_btn">&rarr; </button> 
+</form>
+    <div class="label">
+    <label class="form_label">Transfer to</label>
+    <label class="form_label amount">Amount</label>
+</div>
+
+</div>
+
+<!-- OPERATION: LOAN -->
+<div class="operation loan">
+    <h3>Request Loan💰</h3>
+    <form class="form form_loan"> 
+        <input type="number" class="form_input form_input_loan" placeholder="$000.00">
+        <input type="email" class="form_input form_email" placeholder="Email">
+        <button class="loan_btn operation_btn"> &rarr;</button>
+    </form>
+    <div class="label">
+        <label class="form_label loan_label">Amount</label>
+        <label class="form_label loan_label">E~mail</label>
+    </div>
+    </div>
+
+    <!-- OPERATION: CLOSE ACCT. -->
+<div class="operation close_acct">
+    <h3>Close Account</h3>
+    <form class="form form_closeAcct"> 
+        <input type="text" class="form_input form-userAcct" placeholder="Username"> 
+        <input type="password" class="form_input form_input_acctPin" placeholder="Insert pin">
+        <button class="closeAcct_btn operation_btn"> &rarr; </button>
+    </form>
+        <div class="label">
+        <label class="form_label">Confirm User</label>
+        <label class="form_label">Pin</label>
+    </div>
+    
+    </div>
+
+    
+      <!-- LOGOUT TIMER -->
+      <p class="logout-timer">
+        You will be logged out in <span class="timer_label">05:00</span>
+      </p>
+      </article>
+    </section>
+</main>
+
+<!-- <footer>
+      &copy; by Jonas Schmedtmann. 
+</footer> -->
+
+
+<script src="bankApp.js"></script> 
+</body>
+</html>

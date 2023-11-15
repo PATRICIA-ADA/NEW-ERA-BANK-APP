@@ -1,0 +1,272 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* BANK APP */
+
+:root{
+  --small-text-font: 0.8rem;
+  --default-text-font: 1rem;
+  --medium-text-font: 1.5rem;
+  --big-text-font: 2rem;
+  --small-width: 5rem;
+  --big-width: 10rem;
+  --bg-color: whitesmoke;
+  --white-color:white;
+  --navyBlue-color: rgb(4, 34, 64);
+  --brown-color: brown;
+  --skyBlue-color:rgba(19, 99, 179, 0.543);
+  --bg-body-color: #f3f3f3;
+  
+}
+
+body{
+  background-color: #f3f3f3;
+}
+
+.logoNewEra{
+    position: absolute;
+    top: 0.1rem;
+    left: 1rem;
+}
+
+.newEra{
+    margin-left: 8rem;
+    margin-top: 1.3rem;
+    background-color:var(--brown-color);
+    font-size: var(--medium-text-font);
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--white-color);
+    border: 1px dashed brown;
+    width: 23rem;
+    text-align: center;
+    -webkit-transform:skewX(20deg);
+}
+
+.span1{
+    position: absolute;
+    top:1.5rem;
+    right: 3rem;
+    font-weight: bolder;
+    font-size:medium;
+}
+
+.span1 a:link{
+    text-decoration: none;
+    color: var(--navyBlue-color);
+} 
+
+.span1 a:hover, a:focus{
+    color:hsla(24, 91%, 50%, 0.781)
+}
+
+.user_form{
+  display: flex;
+  gap: 16rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+
+.user_input{
+  width: 5rem;
+  height: 2rem;
+  flex-grow: 1;
+  border-radius: 25px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: var(--skyBlue-color);
+}
+
+.user_btn{
+  font-size: 1.5rem;
+  padding: 0 0.2rem;
+  border-radius: 20px;
+  border: 0;
+  background-color: var(--skyBlue-color);
+}
+
+::placeholder{
+  font-size:0.6rem;
+   color: black; 
+  padding-left: 1rem;
+  font-weight: bolder;
+  }
+
+.bank_app{
+    width: 50rem;
+    margin: 0.5rem auto;  
+    opacity: 0; 
+    transition: all 1s;
+}
+
+.name_account{
+  color: var(--brown-color);
+}
+
+.balance_sheet {
+    display: flex;
+    gap: 22rem;
+  }
+  
+  .balance_label{
+    font-size: var(--medium-text-font);
+  }
+  
+  .balance_date {
+    font-size: var(--small-text-font);
+    font-weight: 500;
+    color:  rgb(4, 34, 64);
+  }
+  
+  .total_balance {
+  color: var(--navyBlue-color);
+  font-size: var(--big-text-font);
+  }
+
+  .sections{
+    display: flex;
+  }
+
+  .transactions{
+    width: 22rem;
+    height: 20rem;
+    overflow: scroll;
+    border-radius:25px ;
+    font-size: var(--small-text-font);
+  }
+
+  .alert{
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+  }
+
+  .alert_label{
+    border-radius: 60px;
+    width: 8rem;
+    text-align: center;
+    color: var(--white-color);
+  }
+
+  .trans_label--CREDIT{
+    background-color: green;
+    padding:0.2rem 0.5rem;
+  }
+
+  .trans_label--DEBIT{
+    background-color:red;
+    padding:0.2rem 0.9rem;
+  }
+
+  .summary{
+    display: flex;
+    gap: 1rem;
+    width: 30rem;
+    margin-left: 1rem;
+  }
+  .summary1{
+    margin-left: 1rem;
+    font-size: 1rem;
+    
+  }
+
+  .summary_label{
+    font-size: 0.6rem;
+  }
+
+  .summary_value_in{
+    color: green;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .summary_value_out{
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .summary_value_interest{
+    color:  rgb(5, 5, 51);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .summary_sort{
+   text-decoration: underline;
+   outline: none;
+   border: none;
+  }
+  
+  .operation{
+    border: 0;
+    border-radius: 25px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form{
+    display: flex;
+    gap: 0.5rem;
+    
+  }
+
+  .form_input{
+    width: 7rem;
+    height: 2rem;
+    flex-grow: 1;
+    border-radius: 25px;
+    padding-left: 1rem;
+    border: 0;
+  }
+
+  .label{
+    display: flex;
+    gap: 5rem;
+    padding: 0 0.5rem;
+  }
+
+  .operation_btn{
+    font-size: 1.5rem;
+    padding: 0 0.3rem;
+    border-radius: 10px;
+    border: 0;
+  }
+  .transfer{
+    background-color: burlywood;
+  }
+  .loan{
+    background-color: rgba(19, 99, 179, 0.543);
+  }
+  .close_acct{
+    background-color: rgba(235, 21, 21, 0.648);
+  }
+
+  .logout-timer{
+    text-align: right;
+    font-size: var(--default-text-font)
+  }
+
+
+
+
+@media all and (max-width:1200px) {
+.redeem{
+   width:min(100%, 380px);
+   margin-top:12rem
+    
+}
+}
+
+@media all and (min-width:1400px) {
+.redeem{
+   width:min(100%, 380px);
+   margin-top:12rem
+    
+}
+
+}
